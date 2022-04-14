@@ -1,0 +1,7 @@
+TheGuide/Assets/PSB/Banheiro.psb filter=lfs diff=lfs merge=lfs -text
+TheGuide/Assets/PSB/Corredor.psb filter=lfs diff=lfs merge=lfs -text
+TheGuide/Assets/PSB/Cozinha.psb filter=lfs diff=lfs merge=lfs -text
+TheGuide/Assets/PSB/Porao.psb filter=lfs diff=lfs merge=lfs -text
+TheGuide/Assets/PSB/Quarto.psb filter=lfs diff=lfs merge=lfs -text
+TheGuide/Assets/PSB/Sala.psb filter=lfs diff=lfs merge=lfs -text
+TheGuide/Assets/PSB/Sotao.psb filter=lfs diff=lfs merge=lfs -text

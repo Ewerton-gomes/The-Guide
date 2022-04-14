@@ -1,0 +1,532 @@
+fileFormatVersion: 2
+guid: b995de5843a34f848920e032e838e01f
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Layer 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4340
+      width: 3839
+      height: 626
+    spriteID: 34233d889830f6d4389096a8b18e4022
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 3448}
+  - name: Layer 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 3840
+      height: 2160
+    spriteID: 1cf73bd3af1b5924c8e1e363cd2fa8f6
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+  - name: Escada
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1339
+      y: 4974
+      width: 666
+      height: 731
+    spriteID: 7de4c249e533be7429cd4592d4967324
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1339, y: 4974}
+  - name: Caixas
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2013
+      y: 4974
+      width: 687
+      height: 550
+    spriteID: 920baa0fa47f600468b2ae52fff48365
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 716, y: 4814}
+  - name: Armario 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4974
+      width: 798
+      height: 1258
+    spriteID: b217e491dddd1334986798a91d98cc60
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -128, y: 4893}
+  - name: Armario 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 810
+      y: 4974
+      width: 521
+      height: 1107
+    spriteID: 2720aab3ebcdd484c8c4c2aa396596e1
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1434, y: 4809}
+  - name: Armario 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1339
+      y: 5713
+      width: 431
+      height: 410
+    spriteID: fbe0d3590857c624ba1bb6092567cdf2
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -2070, y: 5693}
+  - name: Manequin
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 349
+      y: 6240
+      width: 252
+      height: 800
+    spriteID: be1700e48324d96458c8c04d7aeeb67b
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -2937, y: 6063}
+  - name: Espelho
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 6240
+      width: 337
+      height: 919
+    spriteID: 344d2d58fc37b2743a17e9e4a6b58315
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -2721, y: 6065}
+  - name: Cadeira
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3851
+      y: 4340
+      width: 204
+      height: 556
+    spriteID: 2467b9dd7776e2841844b8cc00c1c7aa
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1720, y: 3761}
+  - name: Janela
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2013
+      y: 5532
+      width: 577
+      height: 577
+    spriteID: 4bc8dcd6c9246e046b93bccb1eec6bae
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 372, y: 4825}
+  - name: Mesa
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2708
+      y: 4974
+      width: 302
+      height: 408
+    spriteID: efe25ecbb5e700d4489188c02437083c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 686, y: 4800}
+  - name: Layer 42
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2172
+      width: 3840
+      height: 2160
+    spriteID: cbb102e09397406498ba4915d5339d3d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 2172}
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 35
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 35
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Windows Store Apps
+    overridden: 0
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 35
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 4096
+  importedTextureHeight: 8192
+  documentSize: {x: 3840, y: 2160}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 4096
+  textureActualHeight: 8192
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Layer 4
+    spriteName: Layer 4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 34233d889830f6d4389096a8b18e4022
+    layerID: 16
+    mosaicPosition: {x: 4, y: 4340}
+  - name: Layer 3
+    spriteName: Layer 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1cf73bd3af1b5924c8e1e363cd2fa8f6
+    layerID: 15
+    mosaicPosition: {x: 4, y: 4}
+  - name: Escada
+    spriteName: Escada
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7de4c249e533be7429cd4592d4967324
+    layerID: 31
+    mosaicPosition: {x: 1339, y: 4974}
+  - name: Caixas
+    spriteName: Caixas
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 920baa0fa47f600468b2ae52fff48365
+    layerID: 27
+    mosaicPosition: {x: 2013, y: 4974}
+  - name: Armario 1
+    spriteName: Armario 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b217e491dddd1334986798a91d98cc60
+    layerID: 96
+    mosaicPosition: {x: 4, y: 4974}
+  - name: Armario 2
+    spriteName: Armario 2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2720aab3ebcdd484c8c4c2aa396596e1
+    layerID: 95
+    mosaicPosition: {x: 810, y: 4974}
+  - name: Armario 3
+    spriteName: Armario 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fbe0d3590857c624ba1bb6092567cdf2
+    layerID: 71
+    mosaicPosition: {x: 1339, y: 5713}
+  - name: Manequin
+    spriteName: Manequin
+    isGroup: 0
+    parentIndex: -1
+    spriteID: be1700e48324d96458c8c04d7aeeb67b
+    layerID: 61
+    mosaicPosition: {x: 349, y: 6240}
+  - name: Espelho
+    spriteName: Espelho
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 344d2d58fc37b2743a17e9e4a6b58315
+    layerID: 76
+    mosaicPosition: {x: 4, y: 6240}
+  - name: Cadeira
+    spriteName: Cadeira
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2467b9dd7776e2841844b8cc00c1c7aa
+    layerID: 45
+    mosaicPosition: {x: 3851, y: 4340}
+  - name: Janela
+    spriteName: Janela
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4bc8dcd6c9246e046b93bccb1eec6bae
+    layerID: 39
+    mosaicPosition: {x: 2013, y: 5532}
+  - name: Mesa
+    spriteName: Mesa
+    isGroup: 0
+    parentIndex: -1
+    spriteID: efe25ecbb5e700d4489188c02437083c
+    layerID: 48
+    mosaicPosition: {x: 2708, y: 4974}
+  - name: Layer 42
+    spriteName: Layer 42
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cbb102e09397406498ba4915d5339d3d
+    layerID: 92
+    mosaicPosition: {x: 4, y: 2172}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: Sotao Texture
+  prefabAssetName: Sotao Prefab
+  spriteLibAssetName: Sotao Sprite Lib
+  secondarySpriteTextures: []
