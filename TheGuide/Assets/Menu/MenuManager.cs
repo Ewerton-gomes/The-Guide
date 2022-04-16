@@ -9,7 +9,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] Animator animPlay;
     [SerializeField] Animator animQuit;
     [SerializeField] Animator animTuto;
-    [SerializeField] AudioSource start;
+    [SerializeField] AudioSource start,rain;
     bool tutori = false;
     [SerializeField] GameObject tutorialImage;
     [SerializeField] int index = -1;
