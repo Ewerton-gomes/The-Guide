@@ -19,6 +19,7 @@ public class MenuManager : MonoBehaviour
     {
         Cursor.visible = false;
         GameManager.Instance.KillDontDestroy();
+        
     }
 
     // Update is called once per frame
@@ -82,6 +83,7 @@ public class MenuManager : MonoBehaviour
                     {
                         if (index < max)
                         {
+                            //start.Play();
                             index++;
                         }
                         else { index = 0; }
@@ -90,12 +92,14 @@ public class MenuManager : MonoBehaviour
                     {
                         if (index > 0)
                         {
+                            //start.Play();
                             index--;
                         }
                         else { index = max; }
                     }
                 }
                 keydown = true;
+                start.Play();
 
             }
             else { keydown = false; }

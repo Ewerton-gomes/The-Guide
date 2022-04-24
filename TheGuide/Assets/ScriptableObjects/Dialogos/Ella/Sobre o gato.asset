@@ -15,4 +15,4 @@ MonoBehaviour:
   nome: Ella
   texto: "Ele s\xF3 fica deitado o dia todo, e recentemente ficou bravo porque n\xE3o
     deixei ele comer os peixes e coloquei ele em dieta."
-  foto: {fileID: 0}
+  foto: {fileID: 21300000, guid: ea30e7c7d169cb4409ccd75030a783e7, type: 3}

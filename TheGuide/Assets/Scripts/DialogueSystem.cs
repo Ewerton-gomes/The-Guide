@@ -1,5 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
 
@@ -7,6 +7,7 @@ public class DialogueSystem : MonoBehaviour
 {
     public TextMeshProUGUI text;
     public TextMeshProUGUI nome;
+    public Image foto;
     public Dialogue[] nextDialogue;
     [SerializeField] GameObject dialogueBG;
     [SerializeField] int index = 0;
@@ -38,7 +39,8 @@ public class DialogueSystem : MonoBehaviour
             GameObject.Find("Ella").GetComponent<Movement>().PodeAndar = false;
             escrevendo = true;
             StartCoroutine(PrintDialogue());
-            nome.text = nextDialogue[index].nome;            
+            nome.text = nextDialogue[index].nome;
+            foto.sprite = nextDialogue[index].foto;
         }     
         else 
         {

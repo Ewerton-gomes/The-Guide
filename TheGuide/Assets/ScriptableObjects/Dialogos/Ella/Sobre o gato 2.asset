@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nome: Ella
   texto: "Tamb\xE9m amo voc\xEA Bobby."
-  foto: {fileID: 0}
+  foto: {fileID: 21300000, guid: ea30e7c7d169cb4409ccd75030a783e7, type: 3}
