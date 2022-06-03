@@ -19,7 +19,7 @@ public class MenuManager : MonoBehaviour
     {
         Cursor.visible = false;
         GameManager.Instance.KillDontDestroy();
-        
+        Time.timeScale = 1f;
     }
 
     // Update is called once per frame

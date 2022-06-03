@@ -25,7 +25,7 @@ public class DialogueSystem : MonoBehaviour
     {
         if (index >= maxIndex)
         {
-            GameObject.Find("Ella").GetComponent<Movement>().PodeAndar = true;
+            GameObject.Find("Ella").GetComponent<PlayerControler>().PodeAndar = true;
             dialogueBG.SetActive(false);
         }
         else { dialogueBG.SetActive(true); }
@@ -36,7 +36,7 @@ public class DialogueSystem : MonoBehaviour
     {
         if (index < maxIndex && escrevendo == false)
         {
-            GameObject.Find("Ella").GetComponent<Movement>().PodeAndar = false;
+            GameObject.Find("Ella").GetComponent<PlayerControler>().PodeAndar = false;
             escrevendo = true;
             StartCoroutine(PrintDialogue());
             nome.text = nextDialogue[index].nome;

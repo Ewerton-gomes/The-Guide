@@ -109,7 +109,7 @@ public class PlayerRaycastManager : MonoBehaviour
             {
                 if (Mathf.Abs(ReturnPlayerRB().velocity.y) < 0.001f)
                 {
-                    ReturnPlayerRB().AddForce(new Vector2(0,ReturnPlayer().GetComponent<Movement>().JumpForce),ForceMode2D.Impulse);
+                    ReturnPlayerRB().AddForce(new Vector2(0,ReturnPlayer().GetComponent<PlayerControler>().JumpForce),ForceMode2D.Impulse);
                 }
             }
             else {  }

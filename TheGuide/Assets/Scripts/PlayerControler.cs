@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class PlayerControler : MonoBehaviour
 {
     bool podeAndar = true;
     private Rigidbody2D rb;    
@@ -32,42 +32,66 @@ public class Movement : MonoBehaviour
     void Update()
     {
         //Debug.Log(temp);
-        if (podeAndar == true)
+        if (podeAndar == true && PauseManager.paused == false)
         {
             Movimento();
             Anims();
+            //Interact();
         }
         else
         {
             animator.SetBool("Walking", false);
         }
-        
+        Debug.DrawRay(transform.position,transform.right*1f,Color.red);
     }
+    /*
+    void Interact()
+    {
+        if (Input.GetMouseButtonDown(1))
+        {
+            RaycastHit2D hit;
+            if (Physics2D.Raycast(transform.position,transform.right, 2f))
+            {
+                hit = Physics2D.Raycast(transform.position, transform.right, 1f);
+                Interactable interactable = hit.collider.GetComponent<Interactable>();
+                Debug.Log("chegou");
+                if (interactable != null)
+                {
+                    Debug.Log("Interagiu!");
+                }
+            }
+        }
+    }
+    */
     private void Movimento()
     {
-        
-        horizontal = Input.GetAxis("Horizontal");
-        transform.position += new Vector3(horizontal, 0, 0) * Time.deltaTime * speed;
-        if (horizontal > 0 && !facingRight)
+        if (atacando == false)
         {
-            Flip();
-        }
-        else if (horizontal < 0 && facingRight)
-        {
-            Flip();
-        }
-        if (Input.GetButtonDown("Jump") && Mathf.Abs(rb.velocity.y) < 0.001f)
-        {
-            Jump();
-        }
+            horizontal = Input.GetAxis("Horizontal");
+            transform.position += new Vector3(horizontal, 0, 0) * Time.deltaTime * speed;
+            if (horizontal > 0 && !facingRight)
+            {
+                Flip();
+            }
+            else if (horizontal < 0 && facingRight)
+            {
+                Flip();
+            }
+            if (Input.GetButtonDown("Jump") && Mathf.Abs(rb.velocity.y) < 0.001f)
+            {
+                Jump();
+            }
+        }       
     }
     private void Jump()
     {
         //Anims();
-        rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
-        GameObject.Find("Ella").GetComponent<PlayerSounds>().JumpSound();
+        if (atacando == false)
+        {
+            rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+            GameObject.Find("Ella").GetComponent<PlayerSounds>().JumpSound();
+        }       
     }
-
     private void Anims()
     {
         if (horizontal != 0 && pulou == false)

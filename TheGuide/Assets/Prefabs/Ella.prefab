@@ -96,7 +96,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1418662521724366640}
   m_LocalRotation: {x: -0, y: -0, z: -0.7045817, w: 0.7096229}
-  m_LocalPosition: {x: 6.23, y: 2.25, z: 0}
+  m_LocalPosition: {x: 4.72, y: 2.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1490119837118514059}
@@ -125,12 +125,12 @@ MonoBehaviour:
   m_UseNormalMap: 0
   m_LightOrder: 0
   m_AlphaBlendOnOverlap: 0
-  m_ShadowIntensity: 0
+  m_ShadowIntensity: 0.45
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 8.57
   m_PointLightOuterAngle: 33.68
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 13.590576
+  m_PointLightOuterRadius: 25.6
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
@@ -264,6 +264,7 @@ GameObject:
   - component: {fileID: 1490119837118514071}
   - component: {fileID: 1490119837118514069}
   - component: {fileID: -8378074746221314515}
+  - component: {fileID: 2872896375070621138}
   m_Layer: 2
   m_Name: Ella
   m_TagString: Player
@@ -455,7 +456,7 @@ MonoBehaviour:
   - {x: -5.6860304, y: -11.946752, z: -0.0000020746375}
   m_ShapePathHash: 877049914
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1492
+  m_InstanceId: -1498
 --- !u!114 &1490119837118514068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -516,6 +517,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9bb9c56968908904ba2b4d6c2b504bc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2872896375070621138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490119837118514061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4a24b293c2716c48ba1357424f9f68a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1490119837423916594
