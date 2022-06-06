@@ -53,7 +53,7 @@ public class PauseManager : MonoBehaviour
                 //animOp.SetBool("Selected", false);
                 if (Input.GetButtonDown("Submit"))
                 {
-                    Resume();
+                    Application.Quit();
                 }
                 break;
                 /*

@@ -10,7 +10,12 @@ public class PickItem : Interactable
 
     void PickUp()
     {
-        Inventory.Instance.Add(item);
+        bool pickedup = Inventory.Instance.Add(item);
         Debug.Log("Pegou "+item.name);
+        if (pickedup)
+        {
+            Destroy(gameObject);
+        }
+        
     }
 }

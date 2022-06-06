@@ -13,16 +13,23 @@ public class Interactable : MonoBehaviour
     {
         Debug.Log("Pegou Item");
     }
+    void Start()
+    {
+        if (player == null)
+        {
+            player = GameObject.Find("Ella").GetComponent<Transform>();
+        }
+        if (itemTransform == null)
+        {
+            itemTransform = transform;
+        }
+    }
     void Update()
     {
         IsClose();
     }
     private void OnDrawGizmosSelected()
     {
-        if (itemTransform == null)
-        {
-            itemTransform = transform;
-        }
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(itemTransform.position, radius);
     }
@@ -31,7 +38,7 @@ public class Interactable : MonoBehaviour
     {
         if (Vector3.Distance(player.position,itemTransform.position) <= radius && !interacted)
         {
-            if (Input.GetKeyDown(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 Interact();
                 interacted = true;
