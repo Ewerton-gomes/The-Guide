@@ -36,5 +36,8 @@ public class GameManager
             obj.Die();
         }
     }
-    
+    public GameObject Search(string name)
+    {
+        return GameObject.Find(name);
+    }
 }

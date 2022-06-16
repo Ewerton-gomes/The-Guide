@@ -5,12 +5,26 @@ using UnityEngine.SceneManagement;
 public class PlayerRaycastManager : MonoBehaviour
 {
     RaycastHit2D hit;
+    GameObject enemy;
     [SerializeField] Animator crossfade;
     [SerializeField] private GameObject quadro, pintura;
     [SerializeField] private string[] names;
+    private void Start()
+    {
+        enemy = GameManager.Instance.Search("EnemyTest").gameObject;
+    }
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            if (SceneManager.GetActiveScene().name == "Quarto")
+            {
+                if (enemy != null)
+                {
+                    enemy.SetActive(!enemy.activeSelf);
+                }
+            }
+        }
         Interacts();
         if (SceneManager.GetActiveScene().name == "Quarto")
         {
@@ -172,6 +186,7 @@ public class PlayerRaycastManager : MonoBehaviour
                 }
             }
         }catch { }
+        /*
         try
         {
             if (Input.GetKeyDown(KeyCode.E))
@@ -184,7 +199,7 @@ public class PlayerRaycastManager : MonoBehaviour
                 }
             }
         }catch { }
-        
+        */
     }
     IEnumerator Crossfade()
     {

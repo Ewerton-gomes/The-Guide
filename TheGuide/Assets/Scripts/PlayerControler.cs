@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class PlayerControler : MonoBehaviour
 {
+    [SerializeField] GameObject lanterna;
+    [SerializeField] float folego = 50f;
+    float folegoMax = 50f;
     bool podeAndar = true;
     private Rigidbody2D rb;    
     [SerializeField] private Animator animator;
@@ -28,10 +30,9 @@ public class PlayerControler : MonoBehaviour
     {
         get { return jumpForce; }
     }
-    // Update is called once per frame
     void Update()
     {
-        //Debug.Log(temp);
+        Debug.Log(folego);
         if (podeAndar == true && PauseManager.paused == false)
         {
             Movimento();
@@ -44,25 +45,6 @@ public class PlayerControler : MonoBehaviour
         }
         Debug.DrawRay(transform.position,transform.right*1f,Color.red);
     }
-    /*
-    void Interact()
-    {
-        if (Input.GetMouseButtonDown(1))
-        {
-            RaycastHit2D hit;
-            if (Physics2D.Raycast(transform.position,transform.right, 2f))
-            {
-                hit = Physics2D.Raycast(transform.position, transform.right, 1f);
-                Interactable interactable = hit.collider.GetComponent<Interactable>();
-                Debug.Log("chegou");
-                if (interactable != null)
-                {
-                    Debug.Log("Interagiu!");
-                }
-            }
-        }
-    }
-    */
     private void Movimento()
     {
         if (atacando == false)
@@ -81,11 +63,15 @@ public class PlayerControler : MonoBehaviour
             {
                 Jump();
             }
-        }       
+        }
+        if (Input.GetMouseButtonDown(1))
+        {
+            lanterna.SetActive(!lanterna.activeSelf);
+            AudioManager.instance.PlaySound("LanternON");
+        }
     }
     private void Jump()
     {
-        //Anims();
         if (atacando == false)
         {
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
@@ -94,18 +80,30 @@ public class PlayerControler : MonoBehaviour
     }
     private void Anims()
     {
+        if (pulou == false)
+        {
+            if (folego < folegoMax && Input.GetButton("Fire3") == false)
+            {
+                if (folego > folegoMax)
+                {
+                    folego = folegoMax;
+                }
+                folego += 5f * Time.fixedDeltaTime;
+            }
+            speed = 6;
+            animator.speed = 1f;
+        }
         if (horizontal != 0 && pulou == false)
         {
             animator.SetBool("Walking",true);
-            if (Input.GetButton("Fire3"))
+            if (Input.GetButton("Fire3") && folego>0)
             {
-                speed = 9;
-                animator.speed = 2f;
-            }
-            else
-            {
-                speed = 6;
-                animator.speed = 1f;
+                if (Input.GetAxis("Horizontal") != 0)
+                {
+                    speed = 9;
+                    animator.speed = 2f;
+                    folego -= 5f * Time.fixedDeltaTime;
+                }               
             }
         }
         else

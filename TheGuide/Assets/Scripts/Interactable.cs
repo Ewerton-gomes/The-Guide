@@ -15,10 +15,7 @@ public class Interactable : MonoBehaviour
     }
     void Start()
     {
-        if (player == null)
-        {
-            player = GameObject.Find("Ella").GetComponent<Transform>();
-        }
+        
         if (itemTransform == null)
         {
             itemTransform = transform;
@@ -26,7 +23,15 @@ public class Interactable : MonoBehaviour
     }
     void Update()
     {
-        IsClose();
+        if (player == null)
+        {
+            player = GameManager.Instance.Search("Ella").gameObject.transform;
+        }
+        if (GameObject.Find(this.name))
+        {
+            IsClose();
+        }
+        
     }
     private void OnDrawGizmosSelected()
     {

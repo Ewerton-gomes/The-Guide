@@ -17,7 +17,7 @@ public class MenuManager : MonoBehaviour
     bool keydown;
     void Start()
     {
-        Cursor.visible = false;
+        //Cursor.visible = false;
         GameManager.Instance.KillDontDestroy();
         Time.timeScale = 1f;
     }

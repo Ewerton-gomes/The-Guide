@@ -54,7 +54,7 @@ public class DialogueSystem : MonoBehaviour
         {
             
             text.text += nextDialogue[index].texto[i];
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(0.02f);
         }
         if (index < maxIndex)
         {

@@ -554,6 +554,7 @@ GameObject:
   - component: {fileID: 1016426458}
   - component: {fileID: 1016426457}
   - component: {fileID: 1016426459}
+  - component: {fileID: 1016426460}
   m_Layer: 0
   m_Name: ChavePorao
   m_TagString: Untagged
@@ -641,7 +642,22 @@ MonoBehaviour:
   radius: 3
   player: {fileID: 0}
   itemTransform: {fileID: 0}
-  item: {fileID: 11400000, guid: 13f9c2729d8efd145933c12b7e3d644d, type: 2}
+  item: {fileID: 11400000, guid: d56806ca9dd402042bee634be8e4d7df, type: 2}
+--- !u!114 &1016426460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016426456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7443ab465dba87345bdd72dad91af0a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  player: {fileID: 0}
+  itemTransform: {fileID: 0}
 --- !u!1001 &1149468884
 PrefabInstance:
   m_ObjectHideFlags: 0

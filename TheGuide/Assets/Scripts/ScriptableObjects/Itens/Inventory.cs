@@ -8,12 +8,14 @@ public class Inventory : MonoBehaviour
     #region Singleton
     private void Awake()
     {
-        if (Instance != null)
+        if (Instance != null && Instance != this)
         {
-            Debug.LogWarning("Mais de um inventario meu bom, resolve isso ai");
-            return;
+            Destroy(gameObject);
         }
-        Instance = this;
+        else
+        {
+            Instance = this;
+        }
     }
     #endregion
 
