@@ -56,7 +56,7 @@ public class EnemyIA : MonoBehaviour
     public virtual void Attack()
     {
         //Verifica se o inimigo está perto do jogador, se estiver ele executa um ataque
-        Debug.Log("Inimigo ataca");
+        //Debug.Log("Inimigo ataca");
     }
     public virtual void Follow()
     {
@@ -65,7 +65,7 @@ public class EnemyIA : MonoBehaviour
         {
             Move(player);
         }
-        Debug.Log("Inimigo seguindo " + player.name);
+        //Debug.Log("Inimigo seguindo " + player.name);
     }
     private void OnDrawGizmosSelected()
     {
@@ -93,13 +93,13 @@ public class EnemyIA : MonoBehaviour
             }
             Move(waypoints[index]);
         }
-        Debug.Log("Movimentação padrão, movendo para o waypoint " + index);
+        //Debug.Log("Movimentação padrão, movendo para o waypoint " + index);
     }
 
     public virtual void Die()
     {
         //Verifica a vida atual do inimigo, se for menor ou igual a 0, ele morre
-        Debug.Log("Inimigo morre");
+        //Debug.Log("Inimigo morre");
     }
     
     public virtual void Move(Transform destiny)

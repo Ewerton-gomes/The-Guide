@@ -32,7 +32,7 @@ public class PlayerControler : MonoBehaviour
     }
     void Update()
     {
-        Debug.Log(folego);
+        //Debug.Log(folego);
         if (podeAndar == true && PauseManager.paused == false)
         {
             Movimento();
@@ -43,7 +43,7 @@ public class PlayerControler : MonoBehaviour
         {
             animator.SetBool("Walking", false);
         }
-        Debug.DrawRay(transform.position,transform.right*1f,Color.red);
+        //Debug.DrawRay(transform.position,transform.right*1f,Color.red);
     }
     private void Movimento()
     {
@@ -113,31 +113,35 @@ public class PlayerControler : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && !atacando && !pulou)
         {
             animator.SetBool("Attack", true);
-            fxAnimator.SetBool("Attack", true);
+            //fxAnimator.SetBool("Attack", true);
             GameObject.Find("Ella").GetComponent<PlayerSounds>().AttackSound();
             atacando = true;
         }
+        /*
         if (atacando)
         {
-            StopAnim(0.4f,"Attack");
+            StopAnims(0.9f,"Attack");
         }
+        */
         if (Input.GetButtonDown("Jump"))
         {
             animator.SetBool("Jump", true);
             pulou = true;
         }
+        /*
         if (pulou)
         {
-            StopAnim(1f, "Jump");
+            StopAnims(1f, "Jump");
             //pulou = false;
         }
+        */
     }
     private void Flip()
     {
         facingRight = !facingRight;
         transform.Rotate(0f,180f,0f);
     }
-    private void StopAnim(float cont,string anim)
+    private void StopAnims(float cont,string anim)
     {       
         temp += Time.deltaTime * 1;
         if (temp >= cont)
@@ -154,6 +158,19 @@ public class PlayerControler : MonoBehaviour
             }
             atacando = false;
             temp = 0;
+        }
+    }
+    public void StopAnim(string anim)
+    {
+        animator.SetBool(anim, false);
+        //fxAnimator.SetBool(anim, false);
+        if (anim == "Attack")
+        {
+            atacando = false;
+        }
+        if (anim == "Jump")
+        {
+            pulou = false;
         }
     }
 }
